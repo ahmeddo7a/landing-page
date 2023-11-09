@@ -18,13 +18,13 @@
                     <nav class="header__menu menu">
                         <ul class="menu__list">
                             <li class="menu__item">
-                                <a href="#" class="menu__link">Home</a>
+                                <a data-goto=".main" href="#" class="menu__link">Home</a>
                             </li>
                             <li class="menu__item">
-                                <a href="#" class="menu__link">About Me</a>
+                                <a data-goto=".about" href="#" class="menu__link">About Me</a>
                             </li>
                             <li class="menu__item">
-                                <a href="#" class="menu__link">Contact</a>
+                                <a data-goto=".contacts" href="#" class="menu__link">Contact</a>
                             </li>
                         </ul>
                     </nav>
@@ -56,7 +56,11 @@
                             <h2 class="about__title title">About <span>me</span></h2>
                             <div class="about__text">
                                 <p>
-
+                                    I'm a dedicated software engineer and passionate Flutter developer. Currently, I'm on a rewarding journey as a student at ALX, where I'm honing my skills and expanding my knowledge in the world of technology.
+As a software engineer, I'm driven by my curiosity and a desire to create innovative solutions. My love for Flutter development allows me to build beautiful and functional mobile applications, bringing ideas to life with code.
+Whether I'm crafting elegant user interfaces or solving complex technical challenges, I'm committed to delivering high-quality work and pushing the boundaries of what's possible in the digital realm.
+Join me on this exciting adventure as we explore the endless possibilities of software engineering and mobile app development.
+Let's build the future, one line of code at a time.
                                 </p>
                             </div>
                         </div>
@@ -65,19 +69,97 @@
                         </div>
                     </div>
                 </section>
+
+                <section class="page__works works">
+                    <div class="works__container">
+                        <h2 class="works__title title">
+                            My recent <span>works</span>
+                        </h2>
+                        <div class="works__items items-works">
+                            <nav class="items-works__navigation">
+                                <button data-work-type="" class="items-works__type button button_dark active">
+                                    All
+                                </button>
+                                <button data-work-type="cproject" class="items-works__type button button_dark">
+                                    C Projects
+                                </button>
+                                <button data-work-type="pythonscripts" class="items-works__type button button_dark">
+                                    Python Scripts
+                                </button>
+                                <button data-work-type="mobileapps" class="items-works__type button button_dark">
+                                    Mobile Apps
+                                </button>
+                            </nav>
+                            <div class="items-works__body">
+                                <a data-work-type="cproject" href="#" class="items-works__item">
+                                    <div class="items-works__image">
+                                        <img src="img/works/items/01.png" alt="Image">
+                                    </div>
+                                </a>
+                                <a data-work-type="pythonscripts" href="#" class="items-works__item">
+                                    <div class="items-works__image">
+                                        <img src="img/works/items/02.png" alt="Image">
+                                    </div>
+                                </a>
+                                <a data-work-type="mobileapps" href="#" class="items-works__item">
+                                    <div class="items-works__image">
+                                        <img src="img/works/items/03.png" alt="Image">
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="page__contacts contacts">
+                    <div class="contacts__container">
+                        <div class="contacts__content">
+                            <h2 class="contacts__title title">
+
+                            </h2>
+                            <div class="contacts__image">
+                                <img src="img/contacts/image.svg" alt="Image">
+                            </div>
+                        </div>
+                        <form action="#" class="contacts__form form">
+                            <div class="form__item">
+                                <label for="i-1" class="form__label">
+                                    Your Name
+                                </label>
+                                <input required id="i-1" type="text" class="form__input" placeholder="Name" name="name">
+                            </div>
+                            <div class="form__item">
+                                <label for="i-2" class="form__label">
+                                    Your Email
+                                </label>
+                                <input required id="i-2" type="email" class="form__input" placeholder="Email" name="email">
+                            </div>
+                            <div class="form__item">
+                                <label for="i-3" class="form__label">
+                                    Message
+                                </label>
+                                <textarea id="i-3" class="form__input" placeholder="Message" name="message"></textarea>
+                            </div>
+                            <div class="form__item">
+                                <button type="submit" class="form__button button">
+                                    <span>Send Message</span>
+                                </button>
+                            </div>
+                        </form>
+                    </div>
+                </section>
             </main>
             <footer class="footer">
                 <div class="footer__container">
                     <nav class="footer__menu menu__footer">
                         <ul class="menu-footer__list">
                             <li class="menu-footer__item">
-                                <a href="" class="menu-footer__link menu-footer__link_home">Home</a>
+                                <a href="#" data-goto=".main" class="menu-footer__link menu-footer__link_home">Home</a>
                             </li>
                             <li class="menu-footer__item">
-                                <a href="" class="menu-footer__link menu-footer__link_about">About Me</a>
+                                <a href="#" data-goto=".about" class="menu-footer__link menu-footer__link_about">About Me</a>
                             </li>
                             <li class="menu-footer__item">
-                                <a href="" class="menu-footer__link menu-footer__link_contact">Contact</a>
+                                <a href="#" data-goto=".contacts" class="menu-footer__link menu-footer__link_contact">Contact</a>
                             </li>
                         </ul>
                     </nav>
@@ -95,6 +177,7 @@
                 </div>
             </footer>
         </div>
+        <script src="js/script.js"></script>
     </body>
 
 </html>
