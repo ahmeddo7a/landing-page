@@ -16,8 +16,8 @@
     padding-bottom: 30px;
 }
 
-.header__logo{
-
+.header__logo img{
+    width: 300px;
 }
 .header__menu{
 
